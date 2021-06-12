@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+    <h2 id="header">
+        QUẢN LÝ TUYỂN SINH
+    </span>
+    <h3>Vui lòng chọn khu vực ưu tiên:</h3>
+    <ul id="khuVuc">
+        <li class="type" id="khuVucA">
+            <input type="radio" name="selector" id="idkhuVucA">
+            <label for="khuVucA">Khu vực A</label>
+            <div class="check"></div>
+        </li>
+        <li class="type" id="khuVucB">
+            <input type="radio" name="selector" id="idkhuVucB">
+            <label for="khuVucB">Khu vực B</label>
+            <div class="check"></div>
+        </li>
+        <li class="type" id="khuVucC">
+            <input type="radio" name="selector" id="idkhuVucC">
+            <label for="khuVucC">Khu vực C</label>
+            <div class="check"></div>
+        </li>
+        <li class="type" id="khuVucD">
+            <input type="radio" name="selector" id="idkhuVucD">
+            <label for="khuVucD">Không thuộc khu vực ưu tiên</label>
+            <div class="check"></div>
+        </li>
+    </ul>
+    <div style="clear:both"></div>
+    <h3>Vui lòng chọn đối tượng ưu tiên:</h2>
+        <ul>
+            <li class="type" id="doiTuongMot">
+                <input type="radio" name="selector1" id="iddoiTuongMot">
+                <label for="khuVucA">Đối tượng 1</label>
+                <div class="check"></div>
+            </li>
+            <li class="type" id="doiTuongHai">
+                <input type="radio" name="selector1" id="iddoiTuongHai">
+                <label for="khuVucB">Đối tượng 2</label>
+                <div class="check"></div>
+            </li>
+            <li class="type" id="doiTuongBa">
+                <input type="radio" name="selector1" id="iddoiTuongBa">
+                <label for="khuVucC">Đối tượng 3</label>
+                <div class="check"></div>
+            </li>
+            <li class="type" id="doiTuongTu">
+                <input type="radio" name="selector1" id="iddoiTuongTu">
+                <label for="khuVucD">Không thuộc đối tượng ưu tiên</label>
+                <div class="check"></div>
+            </li>
+        </ul>
+        <div style="clear:both"></div>
+        <h3>Điểm chuẩn của hội đồng (nằm trong khoảng từ 0 đến 34.5 điểm)</h3>
+        <input type="text" id="diemChuan" placeholder="Nhập điểm chuẩn" style="padding:10px 400px 10px 5px;">
+        <h3>Điểm môn Toán (tối đa là 10 điểm)</h3>
+        <input type="text" id="diemToan" placeholder="Nhập điểm môn Toán" style="padding:10px 400px 10px 5px;">
+        <h3>Điểm môn Anh Văn (tối đa là 10 điểm)</h3>
+        <input type="text" id="diemAnh" placeholder="Nhập điểm môn Anh văn" style="padding:10px 400px 10px 5px;">
+        <h3>Điểm môn Ngữ văn (tối đa là 10 điểm)</h3>
+        <input type="text" id="diemVan" placeholder="Nhập điểm môn Ngữ văn" style="padding:10px 400px 10px 5px;">
+        <br>
+        <br>
+        <button id="btntongDiem">Tổng điểm</button>
+        <div id="tongDiem">
+            <h3>Tổng điểm là:
+            <span id="ketQuaDiem"></span>
+            </h3>
+        </div>
+        <button id="btnketQua">Kết quả</button>
+        <div id="ketQua">
+            <h3 id="thongTinKetQua"></p>
+        </div>
+    </div>
+    <!-- END BÀI 1 -->
+    <br>
+    <br>
+    <br>
+    <!-- BÀI 2 -->
+    <div class="_container">
+        <h2 id="header">
+            TÍNH TIỀN ĐIỆN
+        </span>
+    </h2>
+    <h3>Nhập họ và tên người sử dụng điện:</h3>
+    <input type="text" id="hoVaTen" style="padding:10px 400px 10px 5px;" placeholder="Nhập họ và tên">
+    <h3>Số điện tiêu thụ (số Kw)</h3>
+    <input type="text" style="padding:10px 400px 10px 5px;" placeholder="Số kw điện tiêu thụ" id="soKw">
+    <br>
+    <br>
+    <button id="btntongTien">Tổng tiền thanh toán</button>
+    <div id="divThanhTien">
+        <h3 id="thanhTien"></h3>
+    </div>
+    <button id="btnhoaDon">Hóa đơn</button>
+    <div id="divhoaDon">
+        <br>
+       <h3 id="idhoVaTen"></p>
+       <h3 id="soKwTieuThu"></p>
+       <h3 id="thanhToan"></p>
+    </div>
+    </div>
+    <!-- END BÀI 2 -->
+    <script src="./index.js"></script>
+</body>
+</html>
